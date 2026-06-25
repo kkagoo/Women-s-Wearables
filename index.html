@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wearable Gap — Her Health Stack</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      max-width: 680px;
+      margin: 60px auto;
+      padding: 0 24px;
+      background: #fafaf8;
+      color: #1a1a1a;
+      line-height: 1.75;
+      font-size: 18px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.4em;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .deck {
+      font-style: italic;
+      font-size: 1.1em;
+      color: #444;
+      margin-bottom: 36px;
+      border-left: 3px solid #c8a96e;
+      padding-left: 16px;
+    }
+
+    .perspective-box {
+      background: #f0ede6;
+      border-left: 4px solid #c8a96e;
+      padding: 18px 22px;
+      margin: 32px 0;
+      font-size: 0.95em;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .perspective-box strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #8a6d3b;
+    }
+
+    .takeaways {
+      margin: 36px 0;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 24px 0;
+    }
+
+    .takeaway-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 14px;
+      align-items: flex-start;
+    }
+
+    .takeaway-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .takeaway-num {
+      font-family: 'Courier New', monospace;
+      font-weight: 700;
+      font-size: 0.85em;
+      color: #c8a96e;
+      min-width: 28px;
+      padding-top: 2px;
+    }
+
+    .takeaway-text {
+      font-size: 0.97em;
+      color: #222;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.25em;
+      font-weight: 700;
+      margin-top: 52px;
+      margin-bottom: 18px;
+      color: #1a1a1a;
+      border-bottom: 1px solid #e0dbd2;
+      padding-bottom: 8px;
+    }
+
+    p {
+      margin: 0 0 20px 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0dbd2;
+      margin: 40px 0;
+    }
+
+    a {
+      color: #1a1a1a;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: #555; }
+
+    blockquote {
+      border-left: 3px solid #c8a96e;
+      margin: 28px 0;
+      padding: 6px 0 6px 20px;
+      font-style: italic;
+      color: #444;
+      font-size: 0.97em;
+    }
+
+    .outro {
+      font-style: italic;
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    .disclosure {
+      font-size: 0.82em;
+      color: #777;
+      font-style: italic;
+      margin-top: 48px;
+      border-top: 1px solid #e0dbd2;
+      padding-top: 20px;
+    }
+
+    .disclosure a {
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Wearable Gap</h1>
+
+  <div class="deck">
+    Women have been wearing fitness trackers for a decade. Most of those trackers were not built for them.
+  </div>
+
+  <div class="perspective-box">
+    <strong>A note on perspective</strong>
+    I am building a fitness app for women in perimenopause. I wear some of these devices and have been talking to some of the founders building the new ones.
+  </div>
+
+  <div class="takeaways">
+    <div class="takeaway-item">
+      <span class="takeaway-num">01</span>
+      <span class="takeaway-text">Wearables were built for athletes, and the research traditions that shaped them often centered male subjects.</span>
+    </div>
+    <div class="takeaway-item">
+      <span class="takeaway-num">02</span>
+      <span class="takeaway-text">A new cohort of founders is trying to rebuild from female physiology rather than retrofit features onto existing hardware.</span>
+    </div>
+    <div class="takeaway-item">
+      <span class="takeaway-num">03</span>
+      <span class="takeaway-text">The incumbents have noticed. Apple, Oura, and WHOOP are all adding women's health capabilities, mostly by layering software on sensors that were not originally designed with hormones in mind.</span>
+    </div>
+    <div class="takeaway-item">
+      <span class="takeaway-num">04</span>
+      <span class="takeaway-text">Whether purpose-built hardware produces meaningfully better outcomes than a well-executed retrofit is the central empirical question this category has to answer. That answer does not exist yet. The companies that survive will be the ones that can prove better outcomes, not just better sensing.</span>
+    </div>
+  </div>
+
+  <h2>01. The Setup</h2>
+
+  <p>The problem starts upstream of hardware.</p>
+
+  <p>For decades, women were underrepresented in clinical research. Formal NIH inclusion requirements for U.S. federally funded human studies did not arrive until 1993. Before that, trial populations, preclinical models, and performance benchmarks often reflected that gap. Consumer wearables emerged downstream. Most wearable teams weren't making a deliberate choice to ignore female physiology. They inherited design assumptions, validation methods, and benchmarks that had already been built without women's physiology in mind.</p>
+
+  <p>The effect was not uniform across devices or use cases. But it was real enough that a new generation of founders has decided the right answer is not to patch the existing architecture. It is to build a different one.</p>
+
+  <h2>02. What Shifted</h2>
+
+  <p>The shift did not start with hardware.</p>
+
+  <p>Oura's dataset, drawn from a large cohort of female members, produced one of the more substantial observational looks at how women's sleep, recovery, and temperature patterns vary through perimenopause, documenting patterns that had not been tracked at that volume before. Flo Health published an analysis from its user base showing that psychological symptoms of menopause, including anxiety and low mood, often surface years before the hot flashes most women and clinicians expect first. These are observational datasets, not randomized trials, and they carry the limits of any self-reported health data at scale. But they are still useful because they surface patterns that were previously under-measured in a field that has historically lacked female-specific evidence. The significance isn't that they settled the science. They didn't. It's that they made patterns in women's physiology visible at a scale that had rarely been possible before.</p>
+
+  <p>Alongside the data, founders with personal experience of the gap started building. Many of them had similar stories: irregular cycles, late PCOS diagnoses, perimenopause symptoms that existing tools could not contextualize. They decided to make different tools.</p>
+
+  <p>Venture funding has followed the category, though not evenly. Most analysts tracking the space agree the category is growing, hardware is driving a meaningful share of that growth, and menopause and perimenopause are now recognized as distinct markets. Five years ago, they largely were not.</p>
+
+  <h2>03. The New Hardware</h2>
+
+  <p>The companies worth watching are not all doing the same thing. They are making different bets about where the relevant physiological signal lives — wrist, torso, waist, or brain — and, more importantly, what they claim to do with it.</p>
+
+  <p>There is a distinction buried in the category that most coverage misses: measurement, prediction, and intervention are not the same thing. Most of these devices are trying to measure more accurately. A smaller number are making predictive claims. One is actually intervening. Those are different value propositions, and they require different evidence to justify.</p>
+
+  <p><strong>On the wrist.</strong> <a href="https://wearclair.com" target="_blank">Clair Health</a>, co-founded by Jenny Duan, closed an $11.6M seed round from Khosla Ventures in June 2026. The company describes its device as the first continuous, non-invasive hormone tracker, using a stack of 10 biosensors to model where a woman is in her hormonal cycle. In company-reported testing, Clair says the system correctly classified menstrual cycle phase 94% of the time, benchmarked against daily urine samples, the same standard as at-home ovulation strips rather than clinical blood analysis. Independent studies, including one through Stanford, are underway. Most performance figures currently come from company testing rather than peer-reviewed external validation. The device ships in December 2026 as a wellness product, with FDA clearance as a later goal.</p>
+
+  <p><strong>On the torso.</strong> <a href="https://www.myperi.co" target="_blank">IdentifyHer's Peri</a>, built by Heidi Davis after five years of R&D, is positioned as the first wearable designed specifically to detect and decode perimenopause symptoms. It adheres to the upper abdomen, not the wrist. Davis argues that torso placement captures hot flash signals closer to where they originate — a hypothesis grounded in her research but still being validated at scale. No publicly available peer-reviewed validation data was available at time of writing. It launched at $449 and won a CES 2026 Innovation Award.</p>
+
+  <p><strong>At the waist.</strong> <a href="https://www.bebedi.com" target="_blank">Bèbèdí</a>, co-founded by Tosin Oyegoke, is a waist-worn wearable rooted in the West African tradition of waist beads. The company's hypothesis is that continuous measurement of waist circumference, which research has associated with metabolic risk and hormonal variation in women, may surface changes that periodic or wrist-based measurements miss. The company is in private beta, pre-seed stage, and the longitudinal data that would test that hypothesis is still being built.</p>
+
+  <p><strong>At the brain.</strong> <a href="https://www.samphireneuro.com" target="_blank">Samphire Neuroscience</a>, founded by Dr. Emilė Radytė, approaches the problem from a different direction entirely. Its CE-marked Nettle headband uses non-invasive brain stimulation to address PMS, PMDD, and menstrual pain. It is not trying to measure symptoms. It is trying to resolve them. It is entering NHS care pathways.</p>
+
+  <p>Samphire is the outlier. CE-marked and entering NHS care pathways, it is the only device here that has cleared a regulatory bar and is making an intervention claim rather than a measurement one. The others are competing on sensing quality and physiological thesis. The longitudinal data that would separate them is still accumulating.</p>
+
+  <h2>04. The Incumbents Respond</h2>
+
+  <p>Apple, Oura, and WHOOP have been moving into this space, and the scale of their existing user bases gives them real advantages in building population-level models.</p>
+
+  <p>But scale is also a constraint.</p>
+
+  <p>WHOOP launched women's hormonal insights in 2025 and added a women's-specific blood testing panel in spring 2026. Oura launched a proprietary AI model for women's health in February 2026 and has partnered with Maven Clinic to integrate ring data into virtual women's health care. Apple Watch added temperature monitoring that feeds menstrual cycle tracking. Natural Cycles already powers FDA-cleared birth control through Oura's temperature sensor.</p>
+
+  <p>The startups' argument rests on two related points. The first is architectural: modeling hormonal physiology accurately may require a different sensor stack, not a feature layer on top of a general-purpose device. That is Clair's explicit bet. The second is regulatory. Apple, Oura, and WHOOP are building for populations of hundreds of millions. Large platform companies face different regulatory and reputational constraints when making specific health claims at that scale, which may make some categories harder to pursue aggressively than they appear from the outside. The incumbents can measure broadly. The startups are betting that deep, hormone-specific interpretation is a space the incumbents cannot enter as easily as it looks.</p>
+
+  <p>Khosla partner Alex Morgan described much of wearable tech as "bro-tech for tech-bros" in a Fortune statement, a framing Clair founder Jenny Duan has embraced. Whether the architectural and regulatory argument holds up depends on whether female-specific interpretation actually changes health outcomes. That is still unproven.</p>
+
+  <h2>05. The Counterargument</h2>
+
+  <p>It is worth naming the skeptical read, because it is not unreasonable.</p>
+
+  <p>Apple already tracks temperature. Oura already tracks temperature, sleep, and heart rate variability. WHOOP tracks recovery. Natural Cycles has FDA clearance for contraception. The argument that existing hardware, paired with better software and more women's health-focused algorithms, may be sufficient is a real one. Purpose-built wearables need to show not just that they were designed with women's health in mind, but that the design produces outcomes the incumbents cannot match.</p>
+
+  <blockquote>
+    "Users want clinically relevant data they can use to make real healthcare decisions, and regulators are getting much more serious about enforcement. Companies that don't prepare for medical-grade validation and regulation will be left behind as the dinosaurs of the wearables world."
+    <br><br>
+    Blythe Karow, <em>The Device Files</em>, January 2026
+  </blockquote>
+
+  <p>That applies to startups and incumbents equally. The next few years will test whether female-specific hardware creates meaningfully better health signals, or primarily a more focused user experience. Those are different value propositions, and they will not require the same product to win.</p>
+
+  <h2>06. Four Bets</h2>
+
+  <p>I don't know which of these companies wins. But I have a few working hypotheses.</p>
+
+  <p>Most of them will become software companies. The hardware is the acquisition mechanism. The longitudinal dataset is the actual asset. This is how several consumer health categories have evolved before: sensors get cheaper, competitors replicate the hardware, and differentiation shifts into models, interpretation, and engagement. Companies that raise future rounds on sensor novelty alone will eventually have to articulate a data thesis or find acquirers. The most valuable thing any of these companies is building is longitudinal data on women's hormonal and physiological patterns that has historically been difficult to collect at scale. What they do with it, and how fast they figure out how to do something with it, will matter more than any sensor decision they make in the next twelve months.</p>
+
+  <p>Adherence will matter more than sensing. Every wearable has the same underlying problem: devices only generate longitudinal data if people actually wear them consistently. Bèbèdí's bet on cultural familiarity, Peri's torso placement, and Clair's wristband each represent different theories about how to solve that. One of those theories is probably wrong. Wear rates over the next two or three years will reveal which.</p>
+
+  <p>Only one or two will achieve genuine clinical-grade validation. The rest will compete as wellness products, which is a different market with different durability. CE-marked, FDA-cleared, and wellness-product are not interchangeable. Investors who have treated them as equivalent will eventually need to separate them out.</p>
+
+  <p>The winner will close the interpretation gap, not the measurement gap. The hard problem is not capturing more signals. It is converting those signals into something a woman can actually do something with. Not "your HRV dropped" but "pull back on your training load this week." Not "temperature shift detected" but "these patterns are consistent with early perimenopause, here's what to bring to your next appointment." Most wearables stop at the data. The category that closes the distance between the data and the decision will be more durable than the one that wins the sensor arms race.</p>
+
+  <hr>
+
+  <p class="outro">I am working directly with founders building in this space on a series of written interviews for Her Health Stack. The goal is to get past the pitch and into what they actually learned.</p>
+
+  <div class="disclosure">
+    Sources: <a href="https://fortune.com/2026/06/17/clair-khosla-anne-wojcicki-wearble-oura-whoop-hormone-women-health/" target="_blank">Fortune, Clair Health</a> &nbsp;|&nbsp; <a href="https://femtechinsider.com/identifyher-opens-launches-peri-a-wearable-that-tracks-perimenopause-symptoms/" target="_blank">Femtech Insider, IdentifyHer/Peri</a> &nbsp;|&nbsp; <a href="https://nextcapital.substack.com/p/every-waist-tells-a-story" target="_blank">Next Capital, Bèbèdí</a> &nbsp;|&nbsp; <a href="https://www.futurefemhealth.com/p/19-experts-predict-whats-in-store" target="_blank">FutureFemHealth</a> &nbsp;|&nbsp; <a href="https://www.peoplescience.health/blog/moving-beyond-the-wrist-closing-the-validation-gap-in-womens-health-wearables" target="_blank">People Science</a> &nbsp;|&nbsp; <a href="https://www.exponent.com/article/closing-gender-gap-digital-health-technologies" target="_blank">Exponent</a>
+  </div>
+
+</body>
+</html>
